@@ -387,7 +387,7 @@ async def get_agent_plan(user_input: str):
 async def main():
     st.title("AI-Powered Lead Generation Assistant")
 
-    st.text("By Ahmad Ali") #Shakib Absar
+    st.text("By Jeremy Sigamony") 
     st.markdown("---")
 
     st.markdown(

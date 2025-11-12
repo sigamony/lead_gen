@@ -72,23 +72,23 @@ prepare_whatsapp_message_func = {
 
 # Initialize the LLM Model with the corrected Tools
 model = genai.GenerativeModel(
-    model_name="gemini-1.5-flash-latest",
+    model_name="gemini-2.5-flash",
     tools=[search_Maps_func, prepare_whatsapp_message_func] # Pass the corrected dictionaries
 )
 
 
 asyncio.set_event_loop_policy(asyncio.WindowsProactorEventLoopPolicy())
 
-# Ensure necessary system packages are installed
-os.system(
-    'apt-get update && apt-get install -y libnss3 libatk1.0-0 libatk-bridge2.0-0 libx11-xcb1 libxcomposite1 libxcursor1 libxdamage1 libxfixes3 libxi6 libxrandr2 libgbm1 libasound2 libpangocairo-1.0-0 libpango-1.0-0 libgdk-pixbuf2.0-0 libgtk-3-0 libdrm2'
-)
+# # Ensure necessary system packages are installed
+# os.system(
+#     'apt-get update && apt-get install -y libnss3 libatk1.0-0 libatk-bridge2.0-0 libx11-xcb1 libxcomposite1 libxcursor1 libxdamage1 libxfixes3 libxi6 libxrandr2 libgbm1 libasound2 libpangocairo-1.0-0 libpango-1.0-0 libgdk-pixbuf2.0-0 libgtk-3-0 libdrm2'
+# )
 
-# Install Playwright
-os.system('pip install playwright')
+# # Install Playwright
+# os.system('pip install playwright')
 
-# Install Playwright browsers
-os.system('playwright install')
+# # Install Playwright browsers
+# os.system('playwright install')
 
 
 # Ensure Playwright browsers are installed
